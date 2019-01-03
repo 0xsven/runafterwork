@@ -10,7 +10,12 @@ dayjs.extend(relativeTime)
 const Layout = ({ children }) => (
   <div className="page">
     <header className="container">
-      <h1>Run After Work '19</h1>
+      <h1>Run After Working</h1>
+      <img
+        src="https://media.giphy.com/media/KBCxijnlSs9jy/giphy.gif"
+        className="brad"
+        alt="brad dancing"
+      />
       <p className="description">
         We meet every Wednesday 8pm to run in Berlin. Routes and distances will
         be announced at least one week in advance.
