@@ -23,7 +23,13 @@ class DateRow extends React.Component {
           </span>
           <span className="date">
             <span>{dayjs(data.date).format('DD.MM.YYYY')}</span>
-            <span className="relative">{dayjs(data.date).fromNow()}</span>
+            <span className={`relative ${data.highlight ? 'trigger' : ''}`}>
+              {dayjs(data.date).fromNow()}
+            </span>
+            <img
+              src="https://media.giphy.com/media/DyAX4OUDFz4uk/giphy.gif"
+              className="brad"
+            />
           </span>
           <span className="route">{data.route}</span>
         </div>

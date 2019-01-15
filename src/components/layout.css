@@ -54,14 +54,14 @@ footer {
   transform: scale(0);
   transition: all 200ms ease-in-out;
 }
-h1 {
+.trigger {
   transition: all 200ms ease-in-out;
 }
-h1:hover {
+.trigger:hover {
   color: #fa7268;
   cursor: default;
 }
-h1:hover + .brad {
+.trigger:hover + .brad {
   opacity: 1;
   transform: scale(1.1);
 }

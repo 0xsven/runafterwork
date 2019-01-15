@@ -10,7 +10,7 @@ dayjs.extend(relativeTime)
 const Layout = ({ children }) => (
   <div className="page">
     <header className="container">
-      <h1>Run After Working</h1>
+      <h1 className="trigger">Run After Working</h1>
       <img
         src="https://media.giphy.com/media/KBCxijnlSs9jy/giphy.gif"
         className="brad"
