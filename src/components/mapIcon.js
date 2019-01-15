@@ -1,13 +1,7 @@
 import React from 'react'
 
 const MapIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30px"
-    height="30px"
-    viewBox="0 0 430.114 430.114"
-    xmlSpace="preserve"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.114 430.114">
     <g>
       <path
         d="M356.208,107.051c-1.531-5.738-4.64-11.852-6.94-17.205C321.746,23.704,261.611,0,213.055,0

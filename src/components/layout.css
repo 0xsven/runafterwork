@@ -27,7 +27,12 @@ button:focus {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
-  padding: 0 15px;
+  padding: 0 10px;
+}
+@media (min-width: 600px) {
+  .container {
+    padding: 0 15px;
+  }
 }
 .description {
   max-width: 450px;
@@ -63,7 +68,7 @@ h1:hover + .brad {
 
 /* List: */
 .date-row {
-  padding: 0 25px;
+  padding: 0 10px;
   border: 2px solid #b6c4d0;
   border-bottom-width: 0;
   height: 80px;
@@ -80,36 +85,41 @@ h1:hover + .brad {
 }
 .date-row .number {
   color: #b6c4d0;
-  font-size: 24px;
-  margin-right: 25px;
+  font-size: 14px;
+  margin-right: 5px;
 }
 .date-row .highlight {
   color: #fa7268;
-  font-size: 24px;
-  margin-right: 25px;
 }
 .date-row .date {
-  font-size: 14px;
+  font-size: 10px;
+  line-height: 1.8;
   font-weight: bold;
-  margin-right: 45px;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 .date-row .relative {
   font-weight: normal;
-  font-size: 12px;
+  font-size: 10px;
 }
 .date-row .route {
   font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 10px;
 }
 .date-row .distance {
-  margin-right: 30px;
-  font-size: 16px;
+  margin-right: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: right;
 }
 .date-row .komoot {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -117,6 +127,7 @@ h1:hover + .brad {
   border: 2px solid #b6c4d0;
   transition: transform 200ms ease-in;
   background-color: transparent;
+  padding: 5px;
 }
 .date-row .komoot:hover {
   transform: scale(1.2);
@@ -125,11 +136,42 @@ h1:hover + .brad {
 .date-row .komoot svg {
   fill: #b6c4d0;
   transition: all 200ms ease-in;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .date-row .komoot:hover svg {
   transform: translateY(-1px);
   fill: #fa7268;
 }
+@media (min-width: 600px) {
+  .date-row {
+    padding: 0 25px;
+  }
+  .date-row .number {
+    font-size: 24px;
+    margin-right: 25px;
+  }
+  .date-row .date {
+    font-size: 14px;
+    margin-right: 45px;
+  }
+  .date-row .relative {
+    font-size: 12px;
+  }
+  .date-row .route {
+    font-size: 17px;
+  }
+  .date-row .distance {
+    margin-right: 30px;
+    font-size: 16px;
+  }
+  .date-row .komoot {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* Modal: */
 .backdrop {
   position: fixed;
@@ -146,7 +188,7 @@ h1:hover + .brad {
 }
 
 .modal {
-  padding: 50px 30px 20px;
+  padding: 5px 5px 5px;
   background-color: white;
   border: 19px solid #fa7268;
   width: 100%;
@@ -155,4 +197,11 @@ h1:hover + .brad {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .modal {
+    padding: 50px 30px 20px;
+    border: 19px solid #fa7268;
+  }
 }
