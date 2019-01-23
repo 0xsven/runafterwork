@@ -29,6 +29,7 @@ class DateRow extends React.Component {
             <img
               src="https://media.giphy.com/media/DyAX4OUDFz4uk/giphy.gif"
               className="brad"
+              alt="brad again"
             />
           </span>
           <span className="route">{data.route}</span>
