@@ -7,6 +7,41 @@ import './layout.css'
 
 dayjs.extend(relativeTime)
 
+class Link extends React.Component {
+  state = {
+    open: false,
+  }
+  componentDidMount() {
+    const img = new Image()
+    img.src = this.props.href
+  }
+  handleMouseEnter = () => {
+    this.setState({ open: true })
+  }
+  handleMouseLeave = () => {
+    this.setState({ open: false })
+  }
+  render() {
+    return (
+      <>
+        <a
+          href={this.props.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link trigger"
+          onMouseEnter={this.handleMouseEnter}
+          onMouseLeave={this.handleMouseLeave}
+        >
+          {this.props.title}
+        </a>
+        {this.state.open && (
+          <img src={this.props.imageUrl} className="brad top" />
+        )}
+      </>
+    )
+  }
+}
+
 const Layout = ({ children }) => (
   <div className="page">
     <header className="container">
@@ -24,23 +59,17 @@ const Layout = ({ children }) => (
     <div className="container">{children}</div>
     <footer>
       Connect with us on Strava:{' '}
-      <a
+      <Link
+        title="Sven"
+        imageUrl="https://media.giphy.com/media/3ohzdT5WfQC4G2FSiQ/giphy.gif"
         href="https://www.strava.com/athletes/23128421"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="link"
-      >
-        Sven
-      </a>
+      />
       ,{' '}
-      <a
+      <Link
+        title="Onno"
+        imageUrl="https://media.giphy.com/media/l4FGDvIpoiwBaQYMg/giphy.gif"
         href="https://www.strava.com/athletes/24667421"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="link"
-      >
-        Onno
-      </a>
+      />
       .
     </footer>
   </div>

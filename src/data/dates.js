@@ -1,13 +1,20 @@
 const dates = [
   {
+    highlight: true,
+    date: '2019-02-06T19:00:00.000Z',
+    route: 'Kreuzberg Kanal Run 3',
+    distance: 6200,
+    komootId: 55821980,
+  },
+  {
     highlight: false,
     date: '2019-01-30T19:00:00.000Z',
-    route: 'TBA...',
-    distance: 5000,
+    route: "F'hain Speed Run",
+    distance: 4100,
     komootId: undefined,
   },
   {
-    highlight: true,
+    highlight: false,
     date: '2019-01-23T19:00:00.000Z',
     route: 'Kreuzberg Kanal Run 1',
     distance: 3400,
