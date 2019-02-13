@@ -35,7 +35,7 @@ class Link extends React.Component {
           {this.props.title}
         </a>
         {this.state.open && (
-          <img src={this.props.imageUrl} className="brad top" />
+          <img src={this.props.imageUrl} className="brad top" alt="egg" />
         )}
       </>
     )
