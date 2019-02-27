@@ -1,13 +1,34 @@
 const dates = [
   {
     highlight: false,
-    date: '2019-02-20T19:00:00.000Z',
-    route: 'To be announced...',
+    date: '2019-03-13T19:00:00.000Z',
+    route: 'To Be Announced',
+    distance: 6000,
+    komootId: undefined,
+  },
+  {
+    highlight: false,
+    date: '2019-03-06T19:00:00.000Z',
+    route: 'To Be Announced',
     distance: 6000,
     komootId: undefined,
   },
   {
     highlight: true,
+    date: '2019-02-27T19:00:00.000Z',
+    route: 'Treptower and Back (Meet@Schlesi)',
+    distance: 6300,
+    komootId: 57606363,
+  },
+  {
+    highlight: false,
+    date: '2019-02-20T19:00:00.000Z',
+    route: 'Treptower and Back (Meet@Schlesi)',
+    distance: 6300,
+    komootId: 57606363,
+  },
+  {
+    highlight: false,
     date: '2019-02-13T19:00:00.000Z',
     route: 'Kreuzberg Kanal Run 3',
     distance: 6200,
@@ -16,9 +37,9 @@ const dates = [
   {
     highlight: false,
     date: '2019-02-06T19:00:00.000Z',
-    route: 'Treptower and Back',
-    distance: 7100,
-    komootId: undefined,
+    route: 'Treptower and Back (Meet@Schlesi)',
+    distance: 6300,
+    komootId: 57606363,
   },
   {
     highlight: false,
