@@ -1,13 +1,20 @@
 const dates = [
   {
     highlight: false,
-    date: '2019-03-20T19:00:00.000Z',
+    date: '2019-03-27T19:00:00.000Z',
     route: 'To Be Announced',
     distance: 6000,
     komootId: undefined,
   },
   {
     highlight: true,
+    date: '2019-03-20T19:00:00.000Z',
+    route: 'Hasenheide Route',
+    distance: 5800,
+    komootId: 58616724,
+  },
+  {
+    highlight: false,
     date: '2019-03-13T19:00:00.000Z',
     route: 'Hasenheide Route',
     distance: 5800,
