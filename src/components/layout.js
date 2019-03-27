@@ -52,8 +52,8 @@ const Layout = ({ children }) => (
         alt="brad dancing"
       />
       <p className="description">
-        We meet every Wednesday 8pm to run in Berlin. Routes and distances will
-        be announced at least one week in advance.
+        We meet every Wednesday around 7–8pm to run in Berlin. Routes and
+        distances will be announced at least one week in advance.
       </p>
     </header>
     <div className="container">{children}</div>
