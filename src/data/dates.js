@@ -1,13 +1,34 @@
 const dates = [
   {
     highlight: false,
-    date: '2019-04-03T18:00:00.000Z',
-    route: 'To Be Announced',
+    date: '2019-04-24T18:00:00.000Z',
+    route: 'TBA',
     distance: 6000,
     komootId: undefined,
   },
   {
     highlight: true,
+    date: '2019-04-17T18:00:00.000Z',
+    route: 'TBA',
+    distance: 6000,
+    komootId: undefined,
+  },
+  {
+    highlight: false,
+    date: '2019-04-10T18:00:00.000Z',
+    route: 'Kreuzberg Kanal Run 3',
+    distance: 6200,
+    komootId: 55821980,
+  },
+  {
+    highlight: false,
+    date: '2019-04-03T18:00:00.000Z',
+    route: 'Tempelhof',
+    distance: 10000,
+    komootId: undefined,
+  },
+  {
+    highlight: false,
     date: '2019-03-27T18:00:00.000Z',
     route: 'Hasenheide Route',
     distance: 5800,
